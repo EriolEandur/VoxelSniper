@@ -1,15 +1,6 @@
 package com.thevoxelbox.voxelsniper;
 
 import com.google.common.collect.Maps;
-import com.thevoxelbox.voxelsniper.brush.IBrush;
-import org.bukkit.Bukkit;
-import org.bukkit.entity.Player;
-import org.bukkit.util.NumberConversions;
-import org.mcstats.Metrics;
-import org.mcstats.Metrics.Graph;
-
-import java.io.IOException;
-import java.util.HashSet;
 import java.util.Map;
 
 /**
@@ -76,7 +67,7 @@ public final class MetricsManager
      */
     public void start()
     {
-        try
+        /*try
         {
             final Metrics metrics = new Metrics(VoxelSniper.getInstance());
 
@@ -135,7 +126,7 @@ public final class MetricsManager
 
             metrics.start();
         }
-        catch (final IOException exception)
+        catch (final IOException exception)*/
         {
             VoxelSniper.getInstance().getLogger().finest("Failed to submit Metrics Data.");
         }
